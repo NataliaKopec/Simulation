@@ -1,0 +1,14 @@
+( )1. Beam properties
+( )1.1 Beam distribution in x, y, theta
+( )1.2 Save initial beam to the file
+
+( )2. Setup and geometry
+( )2.1 Rotate the target
+( )2.2 Update detector
+
+( )3. Miscellaneous
+( )3.1 Check x-section
+( )3.1.1 Place small square detector e.g. 1x1cm^2 at some angle e.g. 80*deg
+( )3.1.2 Check results with LISE++ - should have the same amount of events
+( )3.2 Increase statistics - max nEvents = 2147483647 gives +/- 1000 events. More runs?
+( )3.3 Readme

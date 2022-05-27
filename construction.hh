@@ -4,6 +4,7 @@
 #include "G4VUserDetectorConstruction.hh"
 #include "G4VPhysicalVolume.hh"
 #include "G4LogicalVolume.hh"
+#include "G4VisAttributes.hh"
 #include "G4PVReplica.hh"
 #include "G4PVDivision.hh"
 #include "G4Box.hh"
@@ -29,10 +30,7 @@ public:
     
 
 private:
-    G4LogicalVolume *logicDetector1;
-    G4LogicalVolume *div_tubeDetector_log;
-    G4LogicalVolume *logicDetector2;
-    G4LogicalVolume *div_tubeRadialDetector_log;
+    G4LogicalVolume *logRings;
 
     
     void DefineMaterials();
