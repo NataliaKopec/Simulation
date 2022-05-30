@@ -1,16 +1,7 @@
 #include "construction.hh"
 
 MyDetectorConstruction::MyDetectorConstruction()
-{
-	fMessenger = new G4GenericMessenger(this, "/detector/", "Detector Construction");
-
-
-    fMessenger->DeclareProperty("nCols1", nCols1, "Number of parts of I detector");
-    fMessenger->DeclareProperty("nCols2", nCols2, "Number of parts of II detector");
-    fMessenger->DeclareProperty("distance1", ndistance1, "Distance I detector from target");
-    fMessenger->DeclareProperty("distance2", ndistance2, "Distance II detector from target");
-
-}
+{}
 
 MyDetectorConstruction::~MyDetectorConstruction()
 {}
