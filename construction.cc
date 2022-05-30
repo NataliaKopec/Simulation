@@ -97,7 +97,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     
 
 
-    G4Tubs *solidRings = new G4Tubs("solidSector",
+    G4Tubs *solidRings = new G4Tubs("solidRings",
                                     28*mm,
                                     83*mm,
                                     detThickness/2.0,    //half thickness
