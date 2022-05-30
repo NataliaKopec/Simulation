@@ -36,9 +36,6 @@ private:
     void DefineMaterials();
     virtual void ConstructSDandField();
 
-    G4int nCols1, nCols2, ndistance1, ndistance2;
-    G4GenericMessenger *fMessenger;
-
     G4LogicalVolume *fScoringVolume;
 };
 
