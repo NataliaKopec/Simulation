@@ -27,9 +27,6 @@ int main(int argc, char** argv)
     runManager->SetUserInitialization(new MyPhysicsList());
     runManager->SetUserInitialization(new MyActionInitialization());
 
-    G4VModularPhysicsList* physics = new QGSP_BIC();
-    runManager->SetUserInitialization(physics);
-
     if(argc == 1)
     {
 		ui = new G4UIExecutive(argc, argv);
