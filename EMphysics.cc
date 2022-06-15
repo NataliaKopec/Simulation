@@ -123,7 +123,6 @@ void PhysListEmStandard::ConstructProcess()
 
       //addition
         G4ProcessManager* pmanager = particle->GetProcessManager();
-        pmanager->AddProcess(new G4ionIonisation,      -1, 1, 1);      
         G4CoulombScattering* cs = new G4CoulombScattering();
         cs->AddEmModel(0, new G4IonCoulombScatteringModel());
         cs->SetBuildTableFlag(false);
