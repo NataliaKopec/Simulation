@@ -13,11 +13,11 @@ MyRunAction::~MyRunAction()
 
 void MyRunAction::BeginOfRunAction(const G4Run* run)
 {
-	// Get analysis manager
+   // Get analysis manager
     G4AnalysisManager *man = G4AnalysisManager::Instance();
 
-	// Open an output file
-	G4int runID = run->GetRunID();
+   // Open an output file
+    G4int runID = run->GetRunID();
     std::stringstream strRunID;
     strRunID << runID;
     
@@ -29,7 +29,6 @@ void MyRunAction::BeginOfRunAction(const G4Run* run)
 
 	// Creating ntuple
 	man->CreateNtuple("Hits", "Energy deposition and target and detector vertex");
-	man->CreateNtupleDColumn("edep");
 	man->CreateNtupleDColumn("X_target");
 	man->CreateNtupleDColumn("Y_target");
 	man->CreateNtupleDColumn("Z_target");
@@ -37,6 +36,13 @@ void MyRunAction::BeginOfRunAction(const G4Run* run)
 	man->CreateNtupleDColumn("X_detector");
 	man->CreateNtupleDColumn("Y_detector");
 	man->CreateNtupleDColumn("Z_detector");	
+	man->CreateNtupleDColumn("X_Momentum");
+	man->CreateNtupleDColumn("Y_Momentum");
+	man->CreateNtupleDColumn("Z_Momentum");
+	man->CreateNtupleDColumn("edep");
+	man->CreateNtupleDColumn("kineticEnergy");
+	man->CreateNtupleDColumn("TotalEnergy");
+	man->CreateNtupleDColumn("sectorNo");	
 	man->FinishNtuple(0);
 }
 
